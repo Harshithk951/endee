@@ -48,7 +48,9 @@ def _json_or_text(response: httpx.Response) -> Any:
 
 def _health_check(client: httpx.Client) -> CheckResult:
     response = client.get("/health")
-    payload = response.json()
+    payload = _json_or_text(response)
+    if not isinstance(payload, dict):
+        return CheckResult("health", False, f"status={response.status_code}, invalid_response")
     connected = bool(payload.get("endee_connected", False))
     detail = f"status={payload.get('status')}, endee_connected={connected}"
     return CheckResult("health", response.status_code == 200 and connected, detail)

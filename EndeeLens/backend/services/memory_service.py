@@ -65,10 +65,10 @@ async def store_agent_memory(request: MemoryStoreRequest) -> MemoryStoreResponse
     sparse_doc = _encoder.encode_document(request.text)
     memory_id = str(uuid.uuid4())
     meta = {
+        **(request.metadata or {}),
         "text": request.text,
         "agent_id": request.agent_id,
         "session_id": request.metadata.get("session_id", "") if request.metadata else "",
-        **(request.metadata or {}),
     }
 
     started = time.perf_counter()
