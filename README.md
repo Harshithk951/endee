@@ -1,3 +1,18 @@
+# 🚀 Endee.io Internship Submission: EndeeLens
+
+**Candidate:** Harshith Kumar  
+**Project:** [EndeeLens: Infrastructure Observability & Agentic Memory Suite](./EndeeLens)  
+**Role:** SDE Intern / AI Intern (2027 Batch)
+
+---
+### 💡 Quick Access
+- **Submission Folder:** [`/EndeeLens`](./EndeeLens)
+- **Technical Documentation:** [View Full README](./EndeeLens/README.md)
+- **Architecture:** [System Design & Moats](./EndeeLens/README.md#-technical-moats-the-why-hire-me)
+
+---
+*(Original Endee.io documentation follows below)*
+
 <p align="center">
   <picture>
       <source media="(prefers-color-scheme: dark)" srcset="docs/assets/logo-dark.svg">
