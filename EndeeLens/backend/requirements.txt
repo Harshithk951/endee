@@ -1,0 +1,7 @@
+fastapi
+uvicorn
+endee
+aiosqlite
+numpy
+httpx
+datasets
